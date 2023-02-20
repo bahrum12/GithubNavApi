@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".ui.detail.DetailActivity">
+
+    <ImageView
+        android:id="@+id/iv_user"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        style="@style/font_small_bold"
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/full_name"/>
+    <TextView
+        style="@style/font_small_bold"
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/username"
+        android:layout_marginVertical="5dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/font_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_follower"
+            android:text="@string/followers"
+            android:drawableLeft="@drawable/dot"
+            android:drawableTint="@color/red"
+            android:drawablePadding="5dp"
+            android:layout_marginEnd="15dp"/>
+        <TextView
+            style="@style/font_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_following"
+            android:text="@string/following"
+            android:drawableLeft="@drawable/dot"
+            android:drawableTint="@color/blue"
+            android:drawablePadding="5dp" />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/font_small"
+        android:id="@+id/tv_repository"
+        android:text="@string/repo"
+        android:drawableLeft="@drawable/dot"
+        android:drawableTint="@color/green"
+        android:drawablePadding="5dp"
+        android:layout_marginVertical="5dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            style="@style/font_small"
+            android:id="@+id/tv_location"
+            android:text="@string/here"
+            android:drawableLeft="@drawable/ic_baseline_location_on_24"
+            android:drawableTint="@color/black"
+            android:layout_marginEnd="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/font_small"
+            android:gravity="center"
+            android:id="@+id/tv_company"
+            android:text="@string/tokped"
+            android:drawableLeft="@drawable/ic_baseline_domain_24"
+            android:drawableTint="@color/black"
+            android:drawablePadding="5dp"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

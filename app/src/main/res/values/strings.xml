@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">GithubNavAPI</string>
+
+    <string-array name="tab_menu">
+        <item>Followers</item>
+        <item>Following</item>
+    </string-array>
+
+    <string name="full_name">Full Name</string>
+    <string name="username">Username</string>
+    <string name="followers">0 Followers</string>
+    <string name="following">0 Following</string>
+    <string name="repo">0 Repositories</string>
+    <string name="here">Here</string>
+    <string name="tokped">Tokopedia</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="splash_text">Github User</string>
+
+</resources>
